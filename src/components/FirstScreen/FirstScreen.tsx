@@ -10,7 +10,7 @@ type Props = {};
 export default function FirstScreen({}: Props) {
   return (
     <>
-      <div className="relative bg-blue w-full h-full flex flex-col gap-[2.88rem] text-white p-5 px-6 pb-12  md:gap-0 md:flex-row md:justify-between md:px-20 md:py-[5rem]  md:items-stretch 3xl:py-[14rem] ">
+      <div className="relative bg-blue w-full h-full flex flex-col gap-[2.88rem] text-white p-5 px-6 pb-12  md:gap-0 md:flex-row md:justify-between md:px-20 md:pt-[5rem] 1xl:pt-[8.325rem]  1xl:pb-[6rem] md:items-stretch">
         <img
           className="self-end object-contain w-26 h-[1.4rem] mt-2 md:mt-0  md:w-30 md:h-7 md:hidden"
           src={oneZeroLogo}
@@ -44,21 +44,21 @@ export default function FirstScreen({}: Props) {
           </div>
         </div>
 
-        <div
-          className="hidden absolute md:flex w-[50vw] top-0 left-0 h-full "
+        {/* <div
+          className="hidden absolute md:flex w-[50vw] top-0 left-0 h-full 2xl:w-[45vw]"
           style={{
             backgroundImage: `url(${firstScreenIllustrationDesktop})`,
-            backgroundSize: "107% 101%",
+            backgroundSize: "100% 101%",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
-        />
+        /> */}
 
-        {/* <img
-          className="hidden absolute md:flex w-[50vw] top-0 left-0 h-full"
+        <img
+          className="hidden absolute md:flex w-[50vw] top-0 left-0 h-full 1xl:w-[48.125rem]"
           src={firstScreenIllustrationDesktop}
           alt="המחשה מסך ראשון"
-        /> */}
+        />
       </div>
       <img
         className="w-full  md:hidden"

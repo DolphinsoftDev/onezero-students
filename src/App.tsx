@@ -11,12 +11,14 @@ import Qa from "./components/Qa/Qa";
 import Footer from "./components/Footer/Footer";
 import StickyFooter from "./components/Footer/StickyFooter";
 import { MIN_DESKTOP_WIDTH } from "./constants/constants";
+import useIsScrolled from "./hooks/useIsScrolled";
 
 function App() {
   const isDesktop = window.screen.width >= MIN_DESKTOP_WIDTH;
+  const isScrolled = useIsScrolled();
   return (
-    <div className="">
-      {isDesktop && <StickyFooter />}
+    <div>
+      {isDesktop &&isScrolled&& <StickyFooter />}
       <FirstScreen />
       <SecondScreen />
       <FifthScreen />

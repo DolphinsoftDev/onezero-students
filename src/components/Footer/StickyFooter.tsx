@@ -37,7 +37,7 @@ export default function StickyFooter({ className }: Props) {
   return (
     <>
       <div
-        className={`sticky bottom-0 flex w-full items-center justify-center px-5 py-[1.125rem] md:justify-between  z-10 bg-white  md:py-[1.125rem] drop-shadow-re md:px-[2.5rem]  md:top-0 ${isVisibleContainerStyle} ${className}`}
+        className={`sticky bottom-0 flex w-full items-center justify-center px-5 py-[1.125rem] md:justify-between  z-50 bg-white  md:py-[1.125rem] drop-shadow-re md:px-[2.5rem]  md:top-0 ${isVisibleContainerStyle} ${className}`}
       >
         <IconButton
           onClick={handleClick}
