@@ -17,7 +17,7 @@ const infoCardHeader =
 const infoCardText =
   "font-Digibank-Regular text-black opacity-70 text-base leading-none pr-2 md:opacity-100 md:text-darkGrey md:p-none md:text-[1.38rem]";
 const cardImage =
-  "w-[18.375rem] h-[17.065rem] 3xl:w-96  3xl:h-fit  scale-x-[1.15] ";
+  "w-[18.375rem] h-[17.065rem] 3xl:w-96  3xl:h-fit  scale-x-[1.15] mb-[1.5rem]";
 export default function SecondScreen({}: Props) {
   return (
     <>
