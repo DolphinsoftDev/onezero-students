@@ -24,11 +24,11 @@ export default function FirstScreen({}: Props) {
         <div className="md:flex md:my-6 md:gap-[9.125rem] md:justify-between ">
           <div className="flex flex-col gap-4 md:gap-0 font-Digibank-Regular">
             <h2 className="text-3xl md:text-[3.375rem] md:leading-[1.06] md:whitespace-nowrap 3xl:text-6xl ">
-              עדיין בבנק
+            סטודנטים? עדיין בבנק
               <br />
               של אבא ואמא?
             </h2>
-            <p className="font-Digibank-Regular   md:text-[1.625rem]  md:mt-12 3xl:text-3xl">
+            <p className="font-Digibank-Regular text-xl  md:text-[1.6875rem]  md:mt-12 3xl:text-3xl">
               מתקדמים לחשבון{" "}
               <span className="font-Digibank-Apparat-Book">Zero</span>
             </p>
