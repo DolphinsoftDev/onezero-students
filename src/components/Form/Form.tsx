@@ -53,7 +53,7 @@ export default function Form({}: Props) {
           birthyear: null,
           company_name: null,
           cupon: null,
-          event_type: "register",
+          event_type: "students",
           form_type: null,
           founders_lead_name: null,
           free_text: null,
