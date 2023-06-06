@@ -47,7 +47,7 @@ export default function SecondScreen({}: Props) {
           <h3 className={infoCardHeader}>
           פיקדון שנתי חד פעמי בריבית
               <br />
-              4.25% (נומינאלית)
+              4.5% (נומינאלית)
           </h3>
           <p className={infoCardText}>
             גם כשהריבית עולה, ללא מינימום.
@@ -81,7 +81,7 @@ export default function SecondScreen({}: Props) {
             <h3 className={infoCardHeader}>
               פיקדון שנתי חד פעמי בריבית
               <br />
-              4.25% (נומינאלית)
+              4.5% (נומינאלית)
             </h3>
             <p className={infoCardText}>
               הפקדון המשתלם בישראל, מתעדכן עם
