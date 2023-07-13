@@ -31,7 +31,9 @@ export default function Form({}: Props) {
   const isFormValid =
     isMailingListValid && isFullNameValid && isEmailValid && isPhoneValid;
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
     event.preventDefault();
     setIsTouched({
       fullName: true,
@@ -40,6 +42,7 @@ export default function Form({}: Props) {
       mailingList: true,
     });
     if (!isFormValid) return;
+    window.dataLayer.push({ 'event': 'oneZero', 'eventdata': { 'category': 'One_LP', 'action': 'form_submit', 'label': 'lead' } });
     setIsLoading(true);
     const [first_name, last_name] = fullName.split(" ");
     axios
@@ -100,10 +103,7 @@ export default function Form({}: Props) {
             <br />
             קשר עם כל המידע על התנאים המעולים שלנו
           </p>
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-5 my-4 md:mt-6 md:gap-8"
-          >
+          <form className="flex flex-col gap-5 my-4 md:mt-6 md:gap-8">
             <input
               className={`${inputStyle} ${
                 isTouched.fullName && !isFullNameValid && invalidInputStyle
@@ -172,6 +172,7 @@ export default function Form({}: Props) {
               </label>
             </div>
             <button
+              onClick={handleSubmit}
               type="submit"
               className={`flex font-Digibank-Medium self-center text-white bg-blue rounded-3xl py-2 px-6 w-fit text-sm font-medium md:text-base md:self-start }`}
             >

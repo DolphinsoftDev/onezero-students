@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import FirstScreen from "./components/FirstScreen/FirstScreen";
 import SecondScreen from "./components/SecondScreen/SecondScreen";
@@ -18,7 +18,7 @@ function App() {
   const isScrolled = useIsScrolled();
   return (
     <div>
-      {isDesktop &&isScrolled&& <StickyFooter />}
+      {isDesktop && isScrolled && <StickyFooter />}
       <FirstScreen />
       <SecondScreen />
       <FifthScreen />
